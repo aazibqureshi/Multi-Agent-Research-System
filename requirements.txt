@@ -1,0 +1,29 @@
+# Core LangChain & Agent Framework
+langchain>=0.1.14
+langchain-core>=0.1.37
+langchain-community>=0.0.30
+langchain-groq>=0.1.4
+
+# Groq API & LLM Integration
+groq>=0.4.2
+
+# Web Scraping & Search Tools
+beautifulsoup4>=4.12.2
+requests>=2.31.0
+tavily-python>=0.2.0
+
+# Environment & Configuration
+python-dotenv>=1.0.0
+
+# Utilities & Data Processing
+pydantic>=2.5.0
+
+# Async Support
+httpx>=0.25.1
+aiohttp>=3.9.1
+
+# JSON & Serialization
+jsonschema>=4.20.0
+
+# Optional: For better logging & debugging
+colorama>=0.4.6
