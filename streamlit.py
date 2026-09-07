@@ -1,7 +1,15 @@
 import logging
+import os
 import time
 
 import streamlit as st
+
+# Bridge Streamlit Cloud "Secrets" into environment variables.
+# This MUST run before importing agents.py, because agents.py (and tools.py)
+# create their clients at import time using os.getenv(...).
+for _key in ("GROQ_API_KEY", "TAVILY_API_KEY"):
+    if _key in st.secrets:
+        os.environ[_key] = st.secrets[_key]
 
 from agents import build_search_agent, build_reader_agent, writer_chain, critic_chain
 
