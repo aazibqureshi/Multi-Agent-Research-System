@@ -1,8 +1,12 @@
+# UI Framework
+streamlit>=1.38.0
+
 # Core LangChain & Agent Framework
 langchain>=0.1.14
 langchain-core>=0.1.37
 langchain-community>=0.0.30
 langchain-groq>=0.1.4
+langgraph>=0.2.0
 
 # Groq API & LLM Integration
 groq>=0.4.2
@@ -27,3 +31,4 @@ jsonschema>=4.20.0
 
 # Optional: For better logging & debugging
 colorama>=0.4.6
+rich>=13.7.0
